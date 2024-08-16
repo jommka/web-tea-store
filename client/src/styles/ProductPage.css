@@ -1,0 +1,160 @@
+#block-path-product {
+    margin: 30px 0 50px 0;
+}
+
+.raw {
+    background-color: #27292B;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+}
+
+.product-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /*background-color: #27292B;*/
+    /*padding: 100px 0 100px 0;*/
+    gap: 70px;
+}
+
+.col {
+    max-width: 1000px;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    /*background-color: #27292B;*/
+    gap: 70px;
+}
+
+.block-img {
+    max-width: 400px;
+    height: auto;
+}
+
+.block-img img{
+    width: 100%;
+    height: auto;
+}
+
+.block-product {
+    max-width: 454px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    /*gap: 30px;*/
+}
+
+.block-product span {
+    color: #888888;
+    font-size: 20px;
+    /*width: 50%;*/
+}
+
+.block-product p {
+    color: white;
+    font-size: 28px;
+}
+
+.block-price {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+#price-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#price-product span {
+    font-size: 18px;
+}
+
+.block-price button {
+    background-color: #78B591;
+    color: white;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 28px;
+    padding: 15px 20px;
+    box-shadow: 0 20px 32px 0 rgba(0, 0, 0, 0.15);
+    transition: background-color 0.5s, transform 0.2s;
+}
+
+.block-price button img {
+    width: 24px;
+    height: 25px;
+    margin-right: 14px;
+}
+
+.block-price button:hover {
+    background-color: #78B591;
+}
+
+.block-price button:active {
+    transform: scale(0.98);
+}
+
+.desc-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 70px;
+    gap: 40px;
+}
+
+.desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.desc-block h1 {
+    font-size: 20px;
+    color: #78B591;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.desc-block p {
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    width: 90%;
+    margin-bottom: 5px;
+}
+
+.temperature-time {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 28px;
+    height: 48px;
+    width: auto;
+    padding: 10px 20px;
+    gap: 10px;
+}
+
+.temperature-time p {
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0;
+}

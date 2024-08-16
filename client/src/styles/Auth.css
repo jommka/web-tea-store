@@ -1,0 +1,170 @@
+
+.auth {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.auth-img {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(43, 43, 43, 0.6), rgba(43, 43, 43, 0.6)), url("img/plantation.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+
+.auth-img img {
+    width: 108px;
+    height: 97px;
+    transition: transform 500ms ease;
+}
+
+.auth-img img:hover {
+    transform: scale(1.05);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*gap: 40px;*/
+}
+
+form h1 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.block-input{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 20px 0 25px 0;
+    position: relative;
+}
+
+#label{
+    font-size: 20px;
+    font-weight: 300;
+    color: #C2C9D1;
+}
+
+.block-input input {
+    background-color: transparent;
+    /*background: rgba(221, 234, 245, 0.4);*/
+    border-radius: 20px;
+    border: 2px solid rgba(221, 234, 245, 0.4);
+    width: 550px;
+    height: 65px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    font-size: 22px;
+    color: #FFFFFF;
+    outline: none;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+
+.block-input label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    font-weight: 300;
+    color: #C2C9D1;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus{
+    border: 2px solid #18ffff;
+}
+
+input[type="text"]:focus ~ label, input[type="text"]:valid ~ label,
+input[type="email"]:focus ~ label, input[type="email"]:valid ~ label,
+input[type="password"]:focus ~ label, input[type="password"]:valid ~ label{
+    top: 0;
+    left: 13px;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 0 4px 0 0;
+    background: #2E3031;
+}
+
+#create {
+    background-color: #FFFFFF;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: 28px;
+    margin: 20px 0 25px 0;
+}
+
+#create span {
+    color: #000000;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#create span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#create:hover span {
+    padding-right: 25px;
+}
+
+#create:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#enter {
+    font-size: 18px;
+    color: #7C838A;
+    font-weight: 500;
+}
+
+#enter span {
+    font-size: 18px;
+    color: #F9ED32;
+    text-decoration: none;
+    font-weight: 500;
+    padding-left: 15px;
+}
+
+.block-input span {
+    position: absolute;
+    cursor: pointer;
+    top: 24%;
+    right: 20px;
+    z-index: 1000;
+}
+
+.block-input span img {
+    width: 35px;
+    height: 35px;
+}
